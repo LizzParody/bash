@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# make_page - A script to produce an HTML file
+
+title="My System Information"
+
+cat <<- _EOF_
+    <HTML>
+    <HEAD>
+        <TITLE>
+        $title
+        </TITLE>
+    </HEAD>
+
+    <BODY>
+    <H1>$title</H1>
+    </BODY>
+    </HTML>
+_EOF_
